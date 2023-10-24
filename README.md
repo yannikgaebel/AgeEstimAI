@@ -9,7 +9,7 @@ Attempt to beat the state of the art in age estimation based on face images
 
 Age estimation (AE) has been a subject of research for many years. Over time, various features have been investigated for their relevance in age prediction, ranging from activity and blood data to medical imaging outputs. Historically, the predominant methods involved manual feature extraction combined with traditional machine learning techniques. However, newer approaches often shifted to deep learning. One prominent application of deep learning in this domain is the use of facial images for age estimation.
 
-In age estimation research, a distinction is made between chronological age and biological age. The former, chronological age, refers to the number of years since birth — the conventional understanding of age. In contrast, biological age refers to the notion that an individual's true age might be different from their chronological age due to many factors influencing the aging process throughout their life. In this project, I focus on predicting chronological age, primarily because it is easier to meassure.
+In age estimation research, a distinction is made between chronological age and biological age. The former, chronological age, refers to the number of years since birth — the conventional understanding of age. In contrast, biological age refers to the notion that an individual's true age might be different from their chronological age due to many factors influencing the aging process throughout their life. In this project, I focus on predicting chronological age, primarily because it is easier to measure.
 
 ## Datasets
 
@@ -27,15 +27,15 @@ This is a dataset containing images of celebrities that was scraped from the int
 
 ## Research and state-of-the-art
 
-Deep learning methodologies applied to age estimation from face images have seen continual advancements over the past years. In my review of the literature I found a few noteworthy contributions that have set benchmarks on this topic.
+Deep learning methodologies applied to age estimation from face images have seen continual advancements over the past years. In my review of the literature, I found a few noteworthy contributions that have set benchmarks on this topic.
 
-Rothe et al. (2015) won the ChaLearn LAP 2015 challenge. A major key to their sucess was creating the IMDB-Wiki dataset. They used convolutional neural networks of VGG-16 architecture with a softmax expected value refinement and achieved a mean average error (MAE) of 3.2 years.
+Rothe et al. (2015) won the ChaLearn LAP 2015 challenge. A major key to their success was creating the IMDB-Wiki dataset. They used convolutional neural networks of VGG-16 architecture with a softmax expected value refinement and achieved a mean average error (MAE) of 3.2 years.
 
 Bobrov et al. (2018), leveraged high-resolution images of only eye corners and achieved a MAE of 2.3 years with this approach.
 
-Othmani et al. (2020) gives a comprehensive overview of different frameworks. Their study offers insights into the performance of several models across multiple datasets.They also propose a model that outperformed existing benchmarks. Their approach uses the Xception architecture which is based on depthwise separable convolution layers. In combined with a pre-training using the CASIA-WEB Face dataset, which enables task specific transfer learning. They yield the best results with a MEA of 2.01 on the MORPH 2 dataset. To my knowledge, this is the current state-of-the-art performance. 
+Othmani et al. (2020) gives a comprehensive overview of different frameworks. Their study offers insights into the performance of several models across multiple datasets. They also propose a model that outperformed existing benchmarks. Their approach uses the Xception architecture which is based on depthwise separable convolution layers. In combined with a pre-training using the CASIA-WEB Face dataset, which enables task specific transfer learning. They yield the best results with a MEA of 2.01 on the MORPH 2 dataset. To my knowledge, this is the current state-of-the-art performance. 
 
-To summarize, generally CNN architectures are used, that result in a single output value or that transform the last layer of the model in a way that yields a single value for the estimated age. The parameter optimized is tipically done using the mean squared error function.
+To summarize, generally CNN architectures are used, that result in a single output value or that transform the last layer of the model in a way that yields a single value for the estimated age. The parameter optimized is typically done using the mean squared error function.
 
 ## Possible ways to beat the state-of-the-art
 
