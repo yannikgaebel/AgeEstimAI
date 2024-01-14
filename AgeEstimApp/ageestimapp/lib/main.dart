@@ -68,6 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
       'sample_image_46.jpg',
       'sample_image_56.jpg',
       'sample_image_60.jpg',
+      'Image_Alexander_Pacha.jpg',
     ];
 
     // randomly select an image name
